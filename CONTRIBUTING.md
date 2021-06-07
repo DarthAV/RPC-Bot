@@ -6,9 +6,9 @@ This project welcomes you to submit your own bot, you can run your bot against a
 ## Components of a bot
 There are going to be two main things in the template you’ll have to fill out for your rock-paper-scissors bot: the play function and the getResult function. 
 
-char play(void) : Return either the character ‘r’, ‘p’ or ‘s’ to indicate what your bot will play. You can use information from prior games to try to determine what the opponent will play next.
+```char play(void)``` : Return either the character ‘r’, ‘p’ or ‘s’ to indicate what your bot will play. You can use information from prior games to try to determine what the opponent will play next.
 
-void getResult(char yourMove, char theirMove) : Your bot is reminded of what it played, as well as told what the opponent played in response. Your bot can then use this information to try to predict what the opponent is doing. 
+```void getResult(char yourMove, char theirMove)``` : Your bot is reminded of what it played, as well as told what the opponent played in response. Your bot can then use this information to try to predict what the opponent is doing. 
 
 ## Examples
 ### Rock Bot
