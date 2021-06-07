@@ -3,8 +3,8 @@ package rps;
 import java.lang.reflect.InvocationTargetException;
 
 public class Grader {
-	static final String NAME1 = "MyRPSBot"; // Name of first bot
-	static final String NAME2 = "MyRPSBot"; // Name of second bot
+	static final String NAME1 = "DarthAVRPSBot"; // Name of first bot
+	static final String NAME2 = "DarthAVRPSBot"; // Name of second bot
 
 	public static void main(String args[])
 			throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException,
