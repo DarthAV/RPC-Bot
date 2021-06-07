@@ -25,8 +25,9 @@ public class MyRPSBot {
 	 */
 	public char play() {
 		Random rand = new Random();
+		// random return for first move or if there have been many draws in a row.
 		if (draws > 5 || theirMove == '\0' || !Character.isDefined(theirMove)) {
-			// random return for fist move
+			draws = 0;
 			if (rand.nextDouble() > 0.666) {
 				return 'r';
 			} else if (rand.nextDouble() < 0.333) {
