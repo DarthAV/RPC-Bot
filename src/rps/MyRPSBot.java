@@ -8,7 +8,7 @@ import java.util.Random;
  * getResult().
  *
  */
-public class RPSBotAnsh {
+public class MyRPSBot {
 
 	private boolean won;
 	private char yourMove;

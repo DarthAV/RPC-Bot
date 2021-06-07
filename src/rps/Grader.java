@@ -3,8 +3,8 @@ package rps;
 import java.lang.reflect.InvocationTargetException;
 
 public class Grader {
-	static final String NAME1 = "RPSBotAnsh";
-	static final String NAME2 = "RPSBotAnsh";
+	static final String NAME1 = "MyRPSBot"; // Name of first bot
+	static final String NAME2 = "MyRPSBot"; // Name of second bot
 
 	public static void main(String args[])
 			throws InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException,
@@ -21,36 +21,38 @@ public class Grader {
 		for (int i = 0; i < 1000; i++) {
 			char aMove = (char) bot1.getMethod("play").invoke(a);
 			char bMove = (char) bot2.getMethod("play").invoke(b);
-			
-			if("rpsRPS".indexOf(aMove) == -1) {
+
+			if ("rpsRPS".indexOf(aMove) == -1) {
 				System.out.println(NAME1 + " played invalid move " + aMove);
 				return;
 			}
-			if("rpsRPS".indexOf(bMove) == -1) {
+			if ("rpsRPS".indexOf(bMove) == -1) {
 				System.out.println(NAME2 + " played invalid move " + bMove);
 				return;
 			}
-			
 
 			switch (score(aMove, bMove)) {
-			case 1:
-				aWins++;
-				break;
-			case 0:
-				ties++;
-				break;
-			case -1:
-				bWins++;
-				break;
+				case 1:
+					aWins++;
+					break;
+				case 0:
+					ties++;
+					break;
+				case -1:
+					bWins++;
+					break;
 			}
 
 			bot1.getMethod("getResult", char.class, char.class).invoke(a, aMove, bMove);
 			bot2.getMethod("getResult", char.class, char.class).invoke(b, bMove, aMove);
 		}
 
-		if (aWins > bWins) System.out.println(NAME1 + " won!");
-		else if (aWins == bWins) System.out.println("It was a tie O:");
-		else System.out.println(NAME2 + " won!");
+		if (aWins > bWins)
+			System.out.println(NAME1 + " won!");
+		else if (aWins == bWins)
+			System.out.println("It was a tie O:");
+		else
+			System.out.println(NAME2 + " won!");
 
 		System.out.println();
 
@@ -63,17 +65,23 @@ public class Grader {
 
 	public static int score(char a, char b) {
 		if (a == 'r') {
-			if (b == 'r') return 0;
-			if (b == 's') return 1;
+			if (b == 'r')
+				return 0;
+			if (b == 's')
+				return 1;
 			return -1;
 		} else if (a == 's') {
-			if (b == 's') return 0;
-			if (b == 'p') return 1;
+			if (b == 's')
+				return 0;
+			if (b == 'p')
+				return 1;
 			return -1;
 		}
 
-		if (b == 'p') return 0;
-		if (b == 'r') return 1;
+		if (b == 'p')
+			return 0;
+		if (b == 'r')
+			return 1;
 		return -1;
 	}
 }
