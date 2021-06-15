@@ -5,8 +5,11 @@ This project welcomes you to submit your own bot, you can run your bot against a
 
 ## Requirements
 - Must be written in Java
-- Do not try to break any parts of the test
-- Name should start with your GitHub Username followed by a short description of the bot Eg. DarthAVOppositeBot
+- No purely random bots
+- Do not attempt to "hack" any part of the code. If you find a bug, report it in issues or fix it in a separate PR
+- Name should start with your GitHub Username followed by a one-word description of the bot (Eg. DarthAVOppositeBot)
+
+Bots that do not meet these requirements will not be merged.
 
 ## Components of a bot
 There are going to be two main things in the template you’ll have to fill out for your rock-paper-scissors bot: the play function and the getResult function. 
