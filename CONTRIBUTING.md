@@ -6,6 +6,7 @@ This project welcomes you to submit your own bot, you can run your bot against a
 ## Requirements
 - Must be written in Java
 - No purely random bots
+- Do not cheat and look at other bots to make a hard counter. Be original.
 - Do not attempt to "hack" any part of the code. If you find a bug, report it in issues or fix it in a separate PR
 - Name should start with your GitHub Username followed by a one-word description of the bot (Eg. DarthAVOppositeBot)
 - All bot code should be in the ```/src/rps/``` folder.
