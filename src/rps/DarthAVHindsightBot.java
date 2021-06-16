@@ -8,7 +8,7 @@ import java.util.Random;
  * getResult().
  *
  */
-public class DarthAVRPSBot {
+public class DarthAVHindsightBot {
 
 	private boolean won;
 	private char yourMove;
