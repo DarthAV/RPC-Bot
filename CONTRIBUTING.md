@@ -8,6 +8,7 @@ This project welcomes you to submit your own bot, you can run your bot against a
 - No purely random bots
 - Do not attempt to "hack" any part of the code. If you find a bug, report it in issues or fix it in a separate PR
 - Name should start with your GitHub Username followed by a one-word description of the bot (Eg. DarthAVOppositeBot)
+- All bot code should be in the ```/src/rps/``` folder.
 
 Bots that do not meet these requirements will not be merged.
 
