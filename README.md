@@ -1,7 +1,7 @@
 # RPS-Bot
 
 ## About
-A simple rock paper scissors bot originally developed for a friendly programming club competition. This rock paper scissors repository contains a set of utilities that allows people to pit their rock paper scissor bots against each other.
+A simple rock paper scissors bot tournament originally developed for a friendly programming club competition. This rock paper scissors repository contains a set of utilities that allows people to pit their rock paper scissor bots against each other.
 
 ## Running Requirements
 - Have Java JDK
