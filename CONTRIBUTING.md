@@ -50,4 +50,4 @@ void getResult(char yourMove, char theirMove){
 ```
 
 ## Why Random bots are prohibited
-...don’t use them you prick! It makes everything even out at 50% and makes it not very interesting. 
+It makes everything even out at 50% and makes competitions not very interesting. 
